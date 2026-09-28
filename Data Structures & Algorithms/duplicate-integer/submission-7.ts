@@ -1,0 +1,20 @@
+class Solution {
+    /**
+     * @param {number[]} nums
+     * @return {boolean}
+     */
+    hasDuplicate(nums: number[]): boolean {
+        let seen = new Set<number>();
+
+        // for (const num of nums) {
+        //     if (seen.has(num)) {
+        //         return true;
+        //     }
+        //     seen.add(num);
+        // }
+ if(new Set(nums).size !== nums.length){
+    return true
+ }
+        return false;
+    }
+}
